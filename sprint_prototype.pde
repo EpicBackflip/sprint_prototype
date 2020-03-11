@@ -65,8 +65,8 @@ boolean Collision(float x,float y,float w,float h){
        return false; 
       }
       
-    
-      
+   
+//nice       
      
   
   
