@@ -31,18 +31,30 @@ void draw() {
   mousex = mouseX;
 
   background(0, 0, 0);
+   if (mousex >= box1Xposition &&         // Right of the left edge AND
+    mousex <= box1Xposition + box1Width &&    // Left of the right edge AND
+    mousey >= box1Yposition &&         // Below the top AND
+    mousey <= box1Yposition + box1Height) { 
+      background(255,255,255);
+    }
+       if (mousex >= box2Xposition &&         // Right of the left edge AND
+    mousex <= box2Xposition + box2Width &&    // Left of the right edge AND
+    mousey >= box2Yposition &&         // Below the top AND
+    mousey <= box2Yposition + box2Height) { 
+      background(255,255,255);
+    }
   
-  if (Collision(box1Xposition, box1Yposition, box1Width, box1Height) == true) {
-    background(255, 255, 255);
-  } else {
-    background(0, 0, 0);
-  }
+  //if (Collision(box1Xposition, box1Yposition, box1Width, box1Height) == true) {
+  //  background(255, 255, 255);
+  //} else {
+  //  background(0, 0, 0);
+  //}
   
-  if (Collision(box2Xposition, box2Yposition, box2Width, box2Height) == true) {
-    background(255, 255, 255);
-  } else {
-    background(0, 0, 0);
-  }
+  //if (Collision(box2Xposition, box2Yposition, box2Width, box2Height) == true) {
+  //  background(255, 255, 255);
+  //} else {
+  //  background(0, 0, 0);
+  //}
   
   rect(box1Xposition, box1Yposition, box1Width, box1Height);
   rect(box2Xposition, box2Yposition, box2Width, box2Height);
