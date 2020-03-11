@@ -1,5 +1,3 @@
-///test
-
 float box1Xposition;
 float box1Yposition;
 float box1Width;
