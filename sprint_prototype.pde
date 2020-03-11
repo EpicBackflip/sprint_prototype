@@ -1,5 +1,3 @@
-///test
-
 float box1Xposition;
 float box1Yposition;
 float box1Width;
@@ -10,8 +8,6 @@ float box2Width;
 float box2Height;
 float mousex;
 float mousey;
-
-// test
 
 void setup(){
 
