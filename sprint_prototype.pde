@@ -9,10 +9,11 @@ float box2Height;
 float mousex;
 float mousey;
 
-void setup(){
+void setup() {
 
-  size(1280,720);
-  background(0,0,0);
+  size(1280, 720);
+  background(0, 0, 0);
+  
   box1Xposition = 100;
   box1Yposition = 100;
   box1Width = 100;
@@ -21,51 +22,46 @@ void setup(){
   box2Yposition = 100;
   box2Width = 100;
   box2Height = 500;
-  
-  
 }
 
-void draw(){
+void draw() {
+
   mousey = mouseY;
   mousex = mouseX;
-background(0,0,0);
-      if(Collision(box1Xposition,box1Yposition,box1Width,box1Height) == true){
-    background(255,255,255);
-  }    else{
-   background(0,0,0); 
-  }
-       if(Collision(box2Xposition,box2Yposition,box2Width,box2Height) == true){
-    background(255,255,255);
-  }else{
-        background(0,0,0);
-  }
-  rect(box1Xposition,box1Yposition,box1Width,box1Height);
-  rect(box2Xposition,box2Yposition,box2Width,box2Height);
 
+  background(0, 0, 0);
   
+  if (Collision(box1Xposition, box1Yposition, box1Width, box1Height) == true) {
+    background(255, 255, 255);
+  } else {
+    background(0, 0, 0);
+  }
+  
+  if (Collision(box2Xposition, box2Yposition, box2Width, box2Height) == true) {
+    background(255, 255, 255);
+  } else {
+    background(0, 0, 0);
+  }
+  
+  rect(box1Xposition, box1Yposition, box1Width, box1Height);
+  rect(box2Xposition, box2Yposition, box2Width, box2Height);
 }
 
-boolean Collision(float x,float y,float w,float h){
+boolean Collision(float x, float y, float w, float h) {
   mousey = mouseY;
   mousex = mouseX;
   float tempx = x;
   float tempy = y;
   float tempw = w;
   float temph = h;
-  if (mousex >= tempx &&         // right of the left edge AND
-    mousex <= tempx + tempw &&    // left of the right edge AND
-    mousey >= tempy &&         // below the top AND
-    mousey <= tempy + temph) {    // above the bottom
+  
+  if (mousex >= tempx &&         // Right of the left edge AND
+    mousex <= tempx + tempw &&    // Left of the right edge AND
+    mousey >= tempy &&         // Below the top AND
+    mousey <= tempy + temph) {    // Above the bottom
 
-        return true;   
-      }
-      else{
-       return false; 
-      }
-      
-   
-//nice       
-     
-  
-  
+    return true;
+  } else {
+    return false;
+  }
 }
