@@ -17,11 +17,11 @@ void setup() {
   
   box1Xposition = 100;
   box1Yposition = 100;
-  box1Width = 100;
+  box1Width = 60;
   box1Height = 500;
   box2Xposition = 1080;
   box2Yposition = 100;
-  box2Width = 100;
+  box2Width = 60;
   box2Height = 500;
 }
 
