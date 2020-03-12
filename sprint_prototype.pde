@@ -63,46 +63,54 @@ void draw() {
   mousex = mouseX;
 
   background(0, 0, 0);
-  if (mousex >= box1Xposition &&         // Right of the left edge AND
+
+  if (mousex >= box1Xposition &&              // Right of the left edge AND
     mousex <= box1Xposition + box1Width &&    // Left of the right edge AND
-    mousey >= box1Yposition &&         // Below the top AND
+    mousey >= box1Yposition &&                // Below the top AND
     mousey <= box1Yposition + box1Height) { 
-    
+
     textSize(20);
-    text("hier worden alle groene blokjes neergelegd",300,height/2);
-    
+    text("hier worden alle groene blokjes neergelegd", 300, height/2);
   }
-  if (mousex >= box2Xposition &&         // Right of the left edge AND
+
+  if (mousex >= box2Xposition &&              // Right of the left edge AND
     mousex <= box2Xposition + box2Width &&    // Left of the right edge AND
-    mousey >= box2Yposition &&         // Below the top AND
+    mousey >= box2Yposition &&                // Below the top AND
     mousey <= box2Yposition + box2Height) { 
+
     textSize(20);
-    text("hier worden alle rode blokjes neergelegd",300,height/2);
+    text("hier worden alle rode blokjes neergelegd", 300, height/2);
   }
-  if (mousex >= box3Xposition &&         // Right of the left edge AND
+
+  if (mousex >= box3Xposition &&              // Right of the left edge AND
     mousex <= box3Xposition + box3Width &&    // Left of the right edge AND
-    mousey >= box3Yposition &&         // Below the top AND
+    mousey >= box3Yposition &&                // Below the top AND
     mousey <= box3Yposition + box3Height) { 
+
     background(255, 255, 255);
   }
+
   if (mousex >= box4Xposition &&         // Right of the left edge AND
     mousex <= box4Xposition + box4Width &&    // Left of the right edge AND
     mousey >= box4Yposition &&         // Below the top AND
     mousey <= box4Yposition + box4Height) { 
+
     background(255, 255, 255);
   }
-  if (mousex >= box5Xposition &&         // Right of the left edge AND
+
+  if (mousex >= box5Xposition &&              // Right of the left edge AND
     mousex <= box5Xposition + box5Width &&    // Left of the right edge AND
-    mousey >= box5Yposition &&         // Below the top AND
+    mousey >= box5Yposition &&                // Below the top AND
     mousey <= box5Yposition + box5Height) { 
+
     textSize(20);
-    text("hier worden alle rode kaartjes neergelegd",300,height/2);
-    
+    text("hier worden alle rode kaartjes neergelegd", 300, height/2);
   }
-  if (mousex >= box6Xposition &&         // Right of the left edge AND
+  if (mousex >= box6Xposition &&              // Right of the left edge AND
     mousex <= box6Xposition + box6Width &&    // Left of the right edge AND
-    mousey >= box6Yposition &&         // Below the top AND
+    mousey >= box6Yposition &&                // Below the top AND
     mousey <= box6Yposition + box6Height) { 
+
     background(255, 255, 255);
   }
 
