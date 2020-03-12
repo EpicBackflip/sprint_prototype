@@ -106,6 +106,7 @@ void draw() {
     textSize(20);
     text("hier worden alle rode kaartjes neergelegd", 300, height/2);
   }
+  
   if (mousex >= box6Xposition &&              // Right of the left edge AND
     mousex <= box6Xposition + box6Width &&    // Left of the right edge AND
     mousey >= box6Yposition &&                // Below the top AND
