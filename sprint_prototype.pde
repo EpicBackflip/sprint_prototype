@@ -67,13 +67,17 @@ void draw() {
     mousex <= box1Xposition + box1Width &&    // Left of the right edge AND
     mousey >= box1Yposition &&         // Below the top AND
     mousey <= box1Yposition + box1Height) { 
-    background(255, 255, 255);
+    
+    textSize(20);
+    text("hier worden alle groene blokjes neergelegd",300,height/2);
+    
   }
   if (mousex >= box2Xposition &&         // Right of the left edge AND
     mousex <= box2Xposition + box2Width &&    // Left of the right edge AND
     mousey >= box2Yposition &&         // Below the top AND
     mousey <= box2Yposition + box2Height) { 
-    background(255, 255, 255);
+    textSize(20);
+    text("hier worden alle rode blokjes neergelegd",300,height/2);
   }
   if (mousex >= box3Xposition &&         // Right of the left edge AND
     mousex <= box3Xposition + box3Width &&    // Left of the right edge AND
@@ -91,7 +95,9 @@ void draw() {
     mousex <= box5Xposition + box5Width &&    // Left of the right edge AND
     mousey >= box5Yposition &&         // Below the top AND
     mousey <= box5Yposition + box5Height) { 
-    background(255, 255, 255);
+    textSize(20);
+    text("hier worden alle rode kaartjes neergelegd",300,height/2);
+    
   }
   if (mousex >= box6Xposition &&         // Right of the left edge AND
     mousex <= box6Xposition + box6Width &&    // Left of the right edge AND
