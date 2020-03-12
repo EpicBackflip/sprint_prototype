@@ -26,6 +26,9 @@ float box6Yposition;
 float box6Width;
 float box6Height;
 
+PImage backgroundLayer = loadImage("Achtergrond.png");
+float backgroundPosition = 0;
+
 void setup() {
   // Set window size
   size(1280, 720);
@@ -70,6 +73,8 @@ void draw() {
   mousex = mouseX;
 
   background(0, 0, 0);
+  
+  image(backgroundLayer, backgroundPosition, backgroundPosition);
   
   // Box 1 collision
   if (mousex >= box1Xposition &&              // Right of the left edge AND
