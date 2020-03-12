@@ -90,9 +90,9 @@ void draw() {
     background(255, 255, 255);
   }
 
-  if (mousex >= box4Xposition &&         // Right of the left edge AND
+  if (mousex >= box4Xposition &&              // Right of the left edge AND
     mousex <= box4Xposition + box4Width &&    // Left of the right edge AND
-    mousey >= box4Yposition &&         // Below the top AND
+    mousey >= box4Yposition &&                // Below the top AND
     mousey <= box4Yposition + box4Height) { 
 
     background(255, 255, 255);
