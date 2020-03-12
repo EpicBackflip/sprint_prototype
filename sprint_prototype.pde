@@ -99,8 +99,8 @@ void draw() {
     mousex <= box3Xposition + box3Width &&    // Left of the right edge AND
     mousey >= box3Yposition &&                // Below the top AND
     mousey <= box3Yposition + box3Height) { 
-
-    background(255, 255, 255);
+    text("bankfiesches", 300, height/2);
+    
   }
   // Box 4 collision
   if (mousex >= box4Xposition &&              // Right of the left edge AND
@@ -108,7 +108,7 @@ void draw() {
     mousey >= box4Yposition &&                // Below the top AND
     mousey <= box4Yposition + box4Height) { 
 
-    background(255, 255, 255);
+      text("goud tier", 300, height/2);
   }
   // Box 5 collision
   if (mousex >= box5Xposition &&              // Right of the left edge AND
@@ -124,8 +124,8 @@ void draw() {
     mousex <= box6Xposition + box6Width &&    // Left of the right edge AND
     mousey >= box6Yposition &&                // Below the top AND
     mousey <= box6Yposition + box6Height) { 
-
-    background(255, 255, 255);
+    text("bankrun", 300, height/2);
+ 
   }
   // Boxes rectangles
   rect(box3Xposition, box3Yposition, box3Width, box3Height);
