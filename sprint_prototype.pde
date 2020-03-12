@@ -26,7 +26,8 @@ float box6Yposition;
 float box6Width;
 float box6Height;
 
-PImage backgroundLayer = loadImage("Achtergrond.png");
+// Background variables
+PImage backgroundLayer;
 float backgroundPosition = 0;
 
 void setup() {
@@ -34,10 +35,12 @@ void setup() {
   size(1280, 720);
   // Set background color
   background(0, 0, 0);
+  // Set background layer
+  backgroundLayer = loadImage("Achtergrond.png");
   
   // Box 1 position & size
   box1Xposition = 100;
-  box1Yposition = 100;
+  box1Yposition = 100;  
   box1Width = 60;
   box1Height = 500;
   // Box 2 position & size
@@ -72,8 +75,9 @@ void draw() {
   mousey = mouseY;
   mousex = mouseX;
 
+  // Draw black background
   background(0, 0, 0);
-  
+  // Draw backgroundlayer
   image(backgroundLayer, backgroundPosition, backgroundPosition);
   
   // Box 1 collision
@@ -83,7 +87,9 @@ void draw() {
     mousey <= box1Yposition + box1Height) { 
 
     textSize(20);
-    text("hier worden alle groene blokjes neergelegd", 300, height/2);
+    fill(0,255,0);
+    text("Hier worden alle groene blokjes neergelegd", 200, height - 540);
+    fill(255);
   }
   // Box 2 collision
   if (mousex >= box2Xposition &&              // Right of the left edge AND
@@ -92,14 +98,18 @@ void draw() {
     mousey <= box2Yposition + box2Height) { 
 
     textSize(20);
-    text("hier worden alle rode blokjes neergelegd", 300, height/2);
+    fill(255,0,0);
+    text("Hier worden alle rode blokjes neergelegd", 650, height - 540);
+    fill(255);
   }
   // Box 3 collision
   if (mousex >= box3Xposition &&              // Right of the left edge AND
     mousex <= box3Xposition + box3Width &&    // Left of the right edge AND
     mousey >= box3Yposition &&                // Below the top AND
     mousey <= box3Yposition + box3Height) { 
-    text("bankfiesches", 300, height/2);
+    
+    textSize(20);
+    text("Bankfiesches", 200, height - 540);
     
   }
   // Box 4 collision
@@ -107,8 +117,9 @@ void draw() {
     mousex <= box4Xposition + box4Width &&    // Left of the right edge AND
     mousey >= box4Yposition &&                // Below the top AND
     mousey <= box4Yposition + box4Height) { 
-
-      text("goud tier", 300, height/2);
+    
+    textSize(20);
+    text("Goud Tier", 700, height - 540);
   }
   // Box 5 collision
   if (mousex >= box5Xposition &&              // Right of the left edge AND
@@ -117,14 +128,18 @@ void draw() {
     mousey <= box5Yposition + box5Height) { 
 
     textSize(20);
-    text("hier worden alle rode kaartjes neergelegd", 300, height/2);
+    fill(255,0,0);
+    text("Hier worden alle rode kaartjes neergelegd", width - 850, height - 80);
+    fill(255);
   }
   // Box 6 collision
   if (mousex >= box6Xposition &&              // Right of the left edge AND
     mousex <= box6Xposition + box6Width &&    // Left of the right edge AND
     mousey >= box6Yposition &&                // Below the top AND
     mousey <= box6Yposition + box6Height) { 
-    text("bankrun", 300, height/2);
+    
+    textSize(20);
+    text("Bankrun", 500, height - 540);
  
   }
   // Boxes rectangles
